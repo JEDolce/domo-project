@@ -1,0 +1,63 @@
+@use '../customs' as *;
+@use '../components/mixins' as *;
+
+
+// Small Desktop
+// @include media-breakpoint-down(lg) {
+
+//     h1 {
+//         font-size: calc(0.75*34);
+//     }
+
+//     h2 {
+//         font-size: calc(0.85*32);
+//     }
+
+//     h3 {
+//         font-size: calc(0.85*26);
+//     }
+
+//     h4 {
+//         font-size: calc(1*22);
+//     }
+// }
+
+// // Tablet
+// @include media-breakpoint-down(md) {
+
+//     h1 {
+//         font-size: 70px;
+//     }
+
+//     h2 {
+//         font-size: calc(0.75*32);
+//     }
+
+//     h3 {
+//         font-size: calc(0.75*26);
+//     }
+
+//     h4 {
+//         font-size: calc(0.9*22);
+//     }
+// }
+
+// // Phone
+// @include media-breakpoint-down(sm) {
+
+//     h1 {
+//         font-size: calc(0.65*34);
+//     }
+
+//     h2 {
+//         font-size: calc(0.6*32);
+//     }
+
+//     h3 {
+//         font-size: calc(0.7*26);
+//     }
+
+//     h4 {
+//         font-size: calc(0.9*22);
+//     }
+// }
