@@ -36180,6 +36180,19 @@ textarea.form-control-lg {
   width: 100px;
 }
 
+@media (min-width: 768px) {
+  .navigator .navbar-toggler-icon {
+    font-size: 30px;
+  }
+  .navigator .navbar-brand img {
+    height: 30px;
+  }
+  .navigator .navbar-brand .logo {
+    margin-left: 5px;
+    height: 30px;
+    width: 150px;
+  }
+}
 @media (min-width: 992px) {
   .navigator .topbar {
     display: block;
@@ -60501,6 +60514,11 @@ textarea.form-control-lg {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    min-height: 50vh;
+  }
+}
 * {
   margin: 0;
   padding: 0;

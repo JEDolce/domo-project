@@ -17,9 +17,17 @@
         p {
             display: none;
         }
-
-
     }
+}
 
+@include media-breakpoint-up(md) {
 
+    .hero {
+        min-height: 50vh;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .hero {}
 }
