@@ -60516,6 +60516,7 @@ textarea.form-control-lg {
 .hero {
   min-height: 100vh;
   background-color: #dee8f1;
+  position: relative;
 }
 .hero .left .separator {
   display: none;
@@ -60530,6 +60531,8 @@ textarea.form-control-lg {
   color: #72645b;
   text-align: center;
   margin: 2rem 0 1rem 0;
+  position: absolute;
+  top: 2%;
 }
 .hero .left h1,
 .hero .left p,
@@ -60542,16 +60545,18 @@ textarea.form-control-lg {
 
 @media (min-width: 768px) {
   .hero {
-    min-height: 50vh;
+    min-height: 60vh;
   }
 }
 @media (min-width: 992px) {
   .hero {
     min-height: 85vh;
-    position: relative;
   }
   .hero .left .title {
     display: flex;
+  }
+  .hero .left .title .letter {
+    position: relative;
   }
   .hero .left .separator {
     width: 100px;
