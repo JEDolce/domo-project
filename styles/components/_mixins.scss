@@ -17,3 +17,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin textSeparator {
+    width: 100px;
+    height: 10px;
+    background-color: $brown;
+}

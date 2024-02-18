@@ -7,6 +7,10 @@
         height: 40vh;
         position: relative;
 
+        .content {
+            display: none;
+        }
+
         .number {
             @include circle;
             @include absoluteCenter;
@@ -32,5 +36,15 @@
 
     .card-4 {
         background-color: $blue-4;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .square {
+
+        .content {
+            display: block;
+        }
     }
 }

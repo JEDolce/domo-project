@@ -60498,6 +60498,9 @@ textarea.form-control-lg {
   min-height: 100vh;
   background-color: #dee8f1;
 }
+.hero .left .separator {
+  display: none;
+}
 .hero .left .letter {
   width: 60px;
   height: 60px;
@@ -60510,13 +60513,78 @@ textarea.form-control-lg {
   margin: 2rem 0 1rem 0;
 }
 .hero .left h1,
-.hero .left p {
+.hero .left p,
+.hero .left .button {
+  display: none;
+}
+.hero .arrowDown {
   display: none;
 }
 
 @media (min-width: 768px) {
   .hero {
     min-height: 50vh;
+  }
+}
+@media (min-width: 992px) {
+  .hero {
+    min-height: 85vh;
+    position: relative;
+  }
+  .hero .left .title {
+    display: flex;
+  }
+  .hero .left .separator {
+    width: 100px;
+    height: 10px;
+    background-color: #72645b;
+    display: block;
+    margin: 1rem 0 1rem 2rem;
+  }
+  .hero .left h1,
+  .hero .left p {
+    display: block;
+  }
+  .hero .left h1 {
+    margin: 2rem 0 1rem 1rem;
+    color: #7b9bc2;
+  }
+  .hero .left .button {
+    display: block;
+    margin-top: 2rem;
+    background-color: #cac2bf;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+  }
+  .hero .left .button .largeBtn {
+    width: 115px;
+    height: 100%;
+    background-color: #72645b;
+  }
+  .hero .left .button .btnArrow {
+    width: 30px;
+    height: 100%;
+    background-color: #72645b;
+    margin-left: 5px;
+    position: relative;
+  }
+  .hero .left .button .btnArrow i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #cac2bf;
+  }
+  .hero .arrowDown {
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    color: white;
   }
 }
 /*!
@@ -72671,6 +72739,9 @@ textarea.form-control-lg {
   height: 40vh;
   position: relative;
 }
+.card-section .square .content {
+  display: none;
+}
 .card-section .square .number {
   width: 60px;
   height: 60px;
@@ -72702,6 +72773,11 @@ textarea.form-control-lg {
   background-color: #b8c8df;
 }
 
+@media (min-width: 992px) {
+  .square .content {
+    display: block;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -72711,6 +72787,7 @@ textarea.form-control-lg {
 body {
   font-family: "Roboto", Sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1 {

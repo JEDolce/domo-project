@@ -8,15 +8,24 @@
 
     .left {
 
+        .separator {
+            display: none
+        }
+
         .letter {
             @include circle;
             margin: 2rem 0 1rem 0;
         }
 
         h1,
-        p {
+        p,
+        .button {
             display: none;
         }
+    }
+
+    .arrowDown {
+        display: none;
     }
 }
 
@@ -29,5 +38,70 @@
 
 @include media-breakpoint-up(lg) {
 
-    .hero {}
+    .hero {
+        min-height: 85vh;
+        position: relative;
+
+        .left {
+
+            .title {
+                display: flex;
+            }
+
+            .separator {
+                @include textSeparator;
+                display: block;
+                margin: 1rem 0 1rem 2rem;
+            }
+
+            h1,
+            p {
+                display: block;
+            }
+
+            h1 {
+                margin: 2rem 0 1rem 1rem;
+                color: $blue-1;
+            }
+
+            .button {
+                display: block;
+                margin-top: 2rem;
+                background-color: $beige-foot;
+                width: 150px;
+                height: 30px;
+                display: flex;
+                cursor: pointer;
+
+                .largeBtn {
+                    width: 115px;
+                    height: 100%;
+                    background-color: $brown;
+                }
+
+                .btnArrow {
+                    width: 30px;
+                    height: 100%;
+                    background-color: $brown;
+                    margin-left: 5px;
+                    position: relative;
+
+                    i {
+                        @include absoluteCenter;
+                        color: $beige-foot;
+                    }
+                }
+            }
+        }
+
+        .arrowDown {
+            display: block;
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 4rem;
+            color: white;
+        }
+    }
 }
