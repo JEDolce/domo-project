@@ -1,0 +1,36 @@
+@use '../customs' as *;
+@use '../components/mixins' as *;
+
+.card-section {
+
+    .square {
+        height: 40vh;
+        position: relative;
+
+        .number {
+            @include circle;
+            @include absoluteCenter;
+        }
+    }
+
+    .card-1 {
+        background-color: $blue-1;
+
+        .number {
+            border: 3px solid $beige-c;
+            color: $beige-c;
+        }
+    }
+
+    .card-2 {
+        background-color: $blue-2;
+    }
+
+    .card-3 {
+        background-color: $blue-3;
+    }
+
+    .card-4 {
+        background-color: $blue-4;
+    }
+}
