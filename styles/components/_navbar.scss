@@ -68,7 +68,38 @@
     .navigator {
 
         .topbar {
+            margin: 0;
             display: block;
+            background-color: $blue-top;
+
+            ul {
+                padding: 0.75rem 0;
+
+                li {
+                    margin-left: 1rem;
+                    list-style: none;
+                    width: 75px;
+                    height: 10px;
+                    background-color: $blue-3;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .navbar {
+
+            &-collapse {
+
+                ul {
+
+                    li {
+                        margin-left: 1.25rem;
+                        width: 125px;
+                        height: 20px;
+                        background-color: $blue-3;
+                    }
+                }
+            }
         }
     }
 }

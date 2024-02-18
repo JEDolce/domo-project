@@ -36195,7 +36195,26 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .navigator .topbar {
+    margin: 0;
     display: block;
+    background-color: #6da3c8;
+  }
+  .navigator .topbar ul {
+    padding: 0.75rem 0;
+  }
+  .navigator .topbar ul li {
+    margin-left: 1rem;
+    list-style: none;
+    width: 75px;
+    height: 10px;
+    background-color: #d8e2ee;
+    cursor: pointer;
+  }
+  .navigator .navbar-collapse ul li {
+    margin-left: 1.25rem;
+    width: 125px;
+    height: 20px;
+    background-color: #d8e2ee;
   }
 }
 /*!
