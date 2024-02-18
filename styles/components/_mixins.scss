@@ -1,0 +1,19 @@
+@use '../customs' as *;
+
+@mixin circle {
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    border: 3px solid $brown;
+    border-radius: 50%;
+    font-size: 50px;
+    color: $brown;
+    text-align: center;
+}
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

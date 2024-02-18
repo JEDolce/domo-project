@@ -1,0 +1,25 @@
+@use '../customs' as *;
+@use '../components/mixins' as *;
+
+
+.hero {
+    min-height: 100vh;
+    background-color: $blue-main;
+
+    .left {
+
+        .letter {
+            @include circle;
+            margin: 2rem 0 1rem 0;
+        }
+
+        h1,
+        p {
+            display: none;
+        }
+
+
+    }
+
+
+}
