@@ -23,3 +23,8 @@
     height: 10px;
     background-color: $brown;
 }
+
+@mixin diagonalSm {
+    border-bottom: 12px solid $blue-2;
+    transform-origin: left;
+}
