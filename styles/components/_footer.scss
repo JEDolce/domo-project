@@ -4,7 +4,7 @@
 .footer {
     background-color: $blue-foot;
 
-    h2 {
+    h4 {
         display: none;
     }
 
@@ -89,7 +89,7 @@
 
     .footer {
 
-        h2 {
+        h4 {
             display: block;
         }
 
@@ -101,6 +101,27 @@
             }
         }
 
-        .social-info {}
+        .social-info {
+            position: absolute;
+            right: 4rem;
+
+            h4 {
+                margin-left: 1rem;
+            }
+
+            ul {
+                padding-left: 0;
+            }
+        }
+
+        .copy {
+
+            .info {
+                height: 20px;
+                width: 600px;
+                background-color: $white-footer;
+            }
+
+        }
     }
 }

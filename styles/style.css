@@ -24007,7 +24007,7 @@ textarea.form-control-lg {
 .footer {
   background-color: #89adcf;
 }
-.footer h2 {
+.footer h4 {
   display: none;
 }
 .footer .contact-info .space {
@@ -24057,12 +24057,27 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 992px) {
-  .footer h2 {
+  .footer h4 {
     display: block;
   }
   .footer .contact-info .space {
     width: 60%;
     height: 25vh;
+  }
+  .footer .social-info {
+    position: absolute;
+    right: 4rem;
+  }
+  .footer .social-info h4 {
+    margin-left: 1rem;
+  }
+  .footer .social-info ul {
+    padding-left: 0;
+  }
+  .footer .copy .info {
+    height: 20px;
+    width: 600px;
+    background-color: #d4dee7;
   }
 }
 /*!
@@ -60572,6 +60587,28 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 64px !important;
+  }
+  h2 {
+    font-size: 60px !important;
+  }
+  h3 {
+    font-size: 52px !important;
+  }
+  h4 {
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    color: #eae5e2 !important;
+  }
+  p,
+  a,
+  li {
+    font-size: 22px !important;
+    line-height: 1.5;
   }
 }
 /*!
@@ -97355,10 +97392,11 @@ h3 {
 
 h4 {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 p,
+li,
 a {
   font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
