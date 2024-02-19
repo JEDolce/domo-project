@@ -1,2 +1,106 @@
 @use '../customs' as *;
 @use '../components/mixins' as *;
+
+.footer {
+    background-color: $blue-foot;
+
+    h2 {
+        display: none;
+    }
+
+    .contact-info {
+
+        .space {
+            width: 80%;
+            height: 20vh;
+            background-color: $blue-4;
+        }
+
+        ul {
+
+            li {
+                text-align: center;
+                list-style: none;
+                margin-top: 1rem;
+                color: $beige-b;
+            }
+        }
+    }
+
+    .social-info {
+
+        ul {
+
+            li {
+                list-style: none;
+
+                a {
+
+                    i {
+                        margin: 1.25rem;
+                        font-size: 50px;
+                        color: $beige-b;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy {
+        width: 100%;
+        height: 4rem;
+        background-color: $beige-foot;
+        position: relative;
+
+        a {
+            text-decoration: none;
+            position: absolute;
+            right: 0;
+
+            .arrow-up {
+                height: 4rem;
+                width: 4rem;
+                background-color: $blue-1;
+
+                i {
+                    font-size: 40px;
+                    color: $beige-b;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+
+    .footer {
+
+        .contact-info {
+
+            .space {
+                width: 60%;
+                height: 25vh;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .footer {
+
+        h2 {
+            display: block;
+        }
+
+        .contact-info {
+
+            .space {
+                width: 60%;
+                height: 25vh;
+            }
+        }
+
+        .social-info {}
+    }
+}

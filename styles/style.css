@@ -24004,6 +24004,67 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.footer {
+  background-color: #89adcf;
+}
+.footer h2 {
+  display: none;
+}
+.footer .contact-info .space {
+  width: 80%;
+  height: 20vh;
+  background-color: #b8c8df;
+}
+.footer .contact-info ul li {
+  text-align: center;
+  list-style: none;
+  margin-top: 1rem;
+  color: #efeeec;
+}
+.footer .social-info ul li {
+  list-style: none;
+}
+.footer .social-info ul li a i {
+  margin: 1.25rem;
+  font-size: 50px;
+  color: #efeeec;
+}
+.footer .copy {
+  width: 100%;
+  height: 4rem;
+  background-color: #cac2bf;
+  position: relative;
+}
+.footer .copy a {
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+}
+.footer .copy a .arrow-up {
+  height: 4rem;
+  width: 4rem;
+  background-color: #7b9bc2;
+}
+.footer .copy a .arrow-up i {
+  font-size: 40px;
+  color: #efeeec;
+}
+
+@media (min-width: 768px) {
+  .footer .contact-info .space {
+    width: 60%;
+    height: 25vh;
+  }
+}
+@media (min-width: 992px) {
+  .footer h2 {
+    display: block;
+  }
+  .footer .contact-info .space {
+    width: 60%;
+    height: 25vh;
+  }
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
