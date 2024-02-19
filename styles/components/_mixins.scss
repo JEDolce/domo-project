@@ -24,7 +24,16 @@
     background-color: $brown;
 }
 
-@mixin diagonalSm {
+@mixin diagonal {
     border-bottom: 12px solid $blue-2;
     transform-origin: left;
+    position: absolute;
+}
+
+@mixin cross {
+    border-bottom: 12px solid $blue-4;
+    transform-origin: left;
+    position: absolute;
+    opacity: 0.3;
+    z-index: 10;
 }

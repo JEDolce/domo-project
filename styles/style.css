@@ -72681,6 +72681,7 @@ textarea.form-control-lg {
   margin: 2rem 0 1rem 0;
   position: absolute;
   top: 2%;
+  z-index: 100;
 }
 .hero .left h1,
 .hero .left p,
@@ -72690,10 +72691,37 @@ textarea.form-control-lg {
 .hero .arrowDown {
   display: none;
 }
+.hero--cross {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.hero--cross--up {
+  border-bottom: 12px solid #b8c8df;
+  transform-origin: left;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 10;
+  bottom: -10px;
+}
+.hero--cross--down {
+  border-bottom: 12px solid #b8c8df;
+  transform-origin: left;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 10;
+  top: -10px;
+}
 
 @media (min-width: 768px) {
   .hero {
     min-height: 60vh;
+  }
+  .hero--cross--up, .hero--cross--down {
+    border-bottom: 20px solid #b8c8df;
   }
 }
 @media (min-width: 992px) {
@@ -72757,6 +72785,9 @@ textarea.form-control-lg {
     transform: translateX(-50%);
     font-size: 4rem;
     color: white;
+  }
+  .hero--cross--up, .hero--cross--down {
+    border-bottom: 24px solid #b8c8df;
   }
 }
 /*!
@@ -97129,7 +97160,6 @@ textarea.form-control-lg {
 }
 .service .envelope {
   width: 100%;
-  height: 50vh;
   background-color: #7b9bc2;
   position: absolute;
   bottom: 1%;
@@ -97154,7 +97184,6 @@ textarea.form-control-lg {
   }
   .service .envelope {
     width: 40%;
-    height: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -97214,26 +97243,23 @@ textarea.form-control-lg {
     color: #cac2bf;
   }
   .service .right--envelope {
-    width: 400px !important;
-    height: 240px;
+    width: 30%;
     background-color: #7b9bc2;
     position: absolute;
     right: 0;
     overflow: hidden;
   }
   .service .right--envelope--line-up {
-    border-bottom: 7px solid rgb(255, 0, 0);
-    width: 564px;
-    transform: rotate(-30deg);
+    border-bottom: 12px solid #a4b9d4;
     transform-origin: left;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
   }
   .service .right--envelope--line-down {
-    border-bottom: 7px solid rgb(255, 0, 0);
-    width: 564px;
-    transform: rotate(30deg);
+    border-bottom: 12px solid #a4b9d4;
     transform-origin: left;
+    position: absolute;
+    top: -10px;
   }
   .service .envelope {
     display: none;

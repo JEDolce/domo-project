@@ -18,6 +18,7 @@
             margin: 2rem 0 1rem 0;
             position: absolute;
             top: 2%;
+            z-index: 100;
         }
 
         h1,
@@ -30,12 +31,39 @@
     .arrowDown {
         display: none;
     }
+
+    &--cross {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        &--up {
+            @include cross;
+            bottom: -10px;
+        }
+
+        &--down {
+            @include cross;
+            top: -10px;
+        }
+    }
 }
 
 @include media-breakpoint-up(md) {
 
     .hero {
         min-height: 60vh;
+
+        &--cross {
+
+            &--up,
+            &--down {
+                border-bottom: 20px solid $blue-4;
+            }
+        }
     }
 }
 
@@ -108,6 +136,14 @@
             transform: translateX(-50%);
             font-size: 4rem;
             color: white;
+        }
+
+        &--cross {
+
+            &--up,
+            &--down {
+                border-bottom: 24px solid $blue-4;
+            }
         }
     }
 }
