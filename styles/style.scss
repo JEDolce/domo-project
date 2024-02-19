@@ -1,6 +1,7 @@
 @use 'customs';
 
 // IMPORT COMPONENTS
+@import 'components/footer';
 @import 'components/mixins';
 @import 'components/navbar';
 @import 'components/typography';
@@ -8,6 +9,7 @@
 // IMPORT SECTIONS
 @import 'sections/hero';
 @import 'sections/cards';
+@import 'sections/services';
 
 // STANDARD
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');

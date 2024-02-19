@@ -1,0 +1,117 @@
+@use '../customs' as *;
+@use '../components/mixins' as *;
+
+.service {
+    min-height: 100vh;
+    background-color: $beige-b;
+    position: relative;
+
+    .left {
+
+        .separator {
+            display: none
+        }
+
+        .letter {
+            @include circle;
+            margin: 2rem 0 1rem 0;
+            position: absolute;
+            top: 2%;
+        }
+
+        h1,
+        p,
+        .button {
+            display: none;
+        }
+    }
+
+    .right {
+        width: 100%;
+        height: 50vh;
+        background-color: $blue-1;
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+
+    .service {
+        min-height: 60vh;
+
+        .right {
+            width: 50%;
+            height: 25vh;
+            background-color: $blue-1;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .service {
+        min-height: 85vh;
+
+        .left {
+
+            .title {
+                display: flex;
+
+                .letter {
+                    position: relative;
+                }
+            }
+
+            .separator {
+                @include textSeparator;
+                display: block;
+                margin: 1rem 0 1rem 2rem;
+            }
+
+            h1,
+            p {
+                display: block;
+            }
+
+            h1 {
+                margin: 2rem 0 1rem 1rem;
+                color: $blue-1;
+            }
+
+            .button {
+                display: block;
+                margin-top: 2rem;
+                background-color: $beige-foot;
+                width: 150px;
+                height: 30px;
+                display: flex;
+                cursor: pointer;
+
+                .largeBtn {
+                    width: 115px;
+                    height: 100%;
+                    background-color: $brown;
+                }
+
+                .btnArrow {
+                    width: 30px;
+                    height: 100%;
+                    background-color: $brown;
+                    margin-left: 5px;
+                    position: relative;
+
+                    i {
+                        @include absoluteCenter;
+                        color: $beige-foot;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 25%;
+            height: 25vh;
+            background-color: $blue-1;
+        }
+    }
+}

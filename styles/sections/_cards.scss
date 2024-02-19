@@ -2,9 +2,10 @@
 @use '../components/mixins' as *;
 
 .card-section {
+    overflow-x: hidden;
 
     .square {
-        height: 40vh;
+        height: 50vh;
         position: relative;
 
         .content {
