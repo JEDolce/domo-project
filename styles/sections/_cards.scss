@@ -5,7 +5,7 @@
     overflow-x: hidden;
 
     .square {
-        height: 50vh;
+        min-height: 50vh;
         position: relative;
 
         &--content {
@@ -44,11 +44,22 @@
     }
 }
 
+@include media-breakpoint-up(md) {
+
+    .card-section {
+
+        .square {
+            min-height: 40vh;
+        }
+    }
+}
+
 @include media-breakpoint-up(lg) {
 
     .card-section {
 
         .square {
+            min-height: 50vh;
             position: relative;
 
             &--content {
@@ -67,8 +78,9 @@
             }
 
             &--number {
+                position: absolute;
                 transform: translate(0%, 0%);
-                top: 80%;
+                bottom: 5%;
                 left: 5%;
             }
 

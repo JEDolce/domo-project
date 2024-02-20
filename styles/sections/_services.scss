@@ -1,9 +1,20 @@
 @use '../customs' as *;
 @use '../components/mixins' as *;
 
+#section-b {
+    background-color: $beige-b;
+}
+
+#section-c {
+    background-color: $beige-c;
+}
+
+#section-d {
+    background-color: $beige-d;
+}
+
 .service {
     min-height: 100vh;
-    background-color: $beige-b;
     position: relative;
 
     .left {
@@ -44,6 +55,10 @@
         }
     }
 
+    .envelope-d {
+        bottom: 0;
+    }
+
 }
 
 @include media-breakpoint-up(md) {
@@ -53,6 +68,10 @@
 
         .envelope {
             width: 40%;
+        }
+
+        .envelope-d {
+            bottom: 1%;
         }
     }
 }

@@ -60629,7 +60629,7 @@ textarea.form-control-lg {
     color: #636d79;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   h1 {
     font-size: 64px !important;
   }
@@ -85088,7 +85088,7 @@ textarea.form-control-lg {
   overflow-x: hidden;
 }
 .card-section .square {
-  height: 50vh;
+  min-height: 50vh;
   position: relative;
 }
 .card-section .square--content {
@@ -85104,9 +85104,9 @@ textarea.form-control-lg {
   color: #72645b;
   text-align: center;
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 }
 .card-section .square--arrow {
   display: none;
@@ -85128,8 +85128,14 @@ textarea.form-control-lg {
   background-color: #b8c8df;
 }
 
+@media (min-width: 768px) {
+  .card-section .square {
+    min-height: 40vh;
+  }
+}
 @media (min-width: 992px) {
   .card-section .square {
+    min-height: 50vh;
     position: relative;
   }
   .card-section .square--content {
@@ -85145,8 +85151,9 @@ textarea.form-control-lg {
     line-height: 1.5;
   }
   .card-section .square--number {
+    position: absolute;
     transform: translate(0%, 0%);
-    top: 80%;
+    bottom: 5%;
     left: 5%;
   }
   .card-section .square--arrow {
@@ -97323,9 +97330,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#section-b {
+  background-color: #efeeec;
+}
+
+#section-c {
+  background-color: #eae5e2;
+}
+
+#section-d {
+  background-color: #efeeec;
+}
+
 .service {
   min-height: 100vh;
-  background-color: #efeeec;
   position: relative;
 }
 .service .left .separator {
@@ -97368,6 +97386,9 @@ textarea.form-control-lg {
   position: absolute;
   top: -10px;
 }
+.service .envelope-d {
+  bottom: 0;
+}
 
 @media (min-width: 768px) {
   .service {
@@ -97375,6 +97396,9 @@ textarea.form-control-lg {
   }
   .service .envelope {
     width: 40%;
+  }
+  .service .envelope-d {
+    bottom: 1%;
   }
 }
 @media (min-width: 992px) {
