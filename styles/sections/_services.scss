@@ -110,7 +110,7 @@
             }
 
             h1 {
-                margin: 2rem 0 1rem 1rem;
+                margin: 2rem 0 2rem 1rem;
                 color: $blue-1;
             }
 
@@ -184,6 +184,19 @@
 
         .envelope {
             display: none;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+
+    .service {
+
+        .right {
+
+            &--envelope {
+                width: 27%;
+            }
         }
     }
 }
