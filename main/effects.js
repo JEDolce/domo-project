@@ -6,16 +6,30 @@ $(document).on("scroll", function () {
     var envelopec = $(".right-c");
     var enveloped = $(".right-d");
 
-    if (pageBottom > 1000) {
-        $(envelopeb).addClass("showEnvelope");
-    } else { }
+    if ($(window).height() < 800) {
+        if (pageBottom > 1000) {
+            $(envelopeb).addClass("showEnvelope");
+        } else { }
 
-    if (pageBottom > 1800) {
-        $(envelopec).addClass("showEnvelope");
-    } else { }
+        if (pageBottom > 1600) {
+            $(envelopec).addClass("showEnvelope");
+        } else { }
 
-    if (pageBottom > 2400) {
-        $(enveloped).addClass("showEnvelope");
-    } else { }
+        if (pageBottom > 2200) {
+            $(enveloped).addClass("showEnvelope");
+        } else { }
+    } else {
+        if (pageBottom > 1400) {
+            $(envelopeb).addClass("showEnvelope");
+        } else { }
+
+        if (pageBottom > 2400) {
+            $(envelopec).addClass("showEnvelope");
+        } else { }
+
+        if (pageBottom > 3000) {
+            $(enveloped).addClass("showEnvelope");
+        } else { }
+    }
 });
 
