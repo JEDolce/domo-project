@@ -8,6 +8,7 @@
     position: relative;
 
     .left {
+        z-index: 100;
 
         .separator {
             display: none
@@ -18,7 +19,6 @@
             margin: 2rem 0 1rem 0;
             position: absolute;
             top: 2%;
-            z-index: 100;
         }
 
         h1,
