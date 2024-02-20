@@ -97705,12 +97705,17 @@ textarea.form-control-lg {
     color: #636d79 !important;
   }
 }
+@media (min-width: 1200px) {
+  .card-section .square p {
+    font-size: 16px !important;
+  }
+}
 @media (min-width: 1400px) {
   .card-section .square {
     padding: 2rem 3rem 0rem 2rem;
   }
   .card-section .square p {
-    font-size: 22px !important;
+    font-size: 18px !important;
   }
 }
 /*!
