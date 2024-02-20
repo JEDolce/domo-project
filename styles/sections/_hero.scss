@@ -75,17 +75,23 @@
         .left {
 
             .title {
-                display: flex;
+                margin-left: -1.5rem;
+                margin-bottom: 3rem;
 
                 .letter {
                     position: relative;
+                    font-size: 68px;
+                    font-weight: 700;
+                    width: 75px;
+                    height: 75px;
+                    padding: 0.25rem;
                 }
             }
 
             .separator {
                 @include textSeparator;
                 display: block;
-                margin: 1rem 0 1rem 2rem;
+                margin: 1.5rem 0 2rem 0;
             }
 
             h1,
