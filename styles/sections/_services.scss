@@ -118,7 +118,6 @@
                     position: relative;
 
                     i {
-                        @include absoluteCenter;
                         color: $beige-foot;
                     }
                 }

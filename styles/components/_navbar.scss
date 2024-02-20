@@ -94,9 +94,29 @@
 
                     li {
                         margin-left: 1.25rem;
-                        width: 125px;
+                        width: 100px;
                         height: 20px;
                         background-color: $blue-3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-up(xl) {
+
+    .navigator {
+
+        .navbar {
+
+            &-collapse {
+
+                ul {
+
+                    li {
+                        width: 125px;
                     }
                 }
             }

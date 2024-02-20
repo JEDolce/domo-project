@@ -24026,7 +24026,7 @@ textarea.form-control-lg {
 }
 .footer .social-info ul li a i {
   margin: 1.25rem;
-  font-size: 50px;
+  font-size: 40px;
   color: #efeeec;
 }
 .footer .copy {
@@ -24055,13 +24055,20 @@ textarea.form-control-lg {
     width: 60%;
     height: 25vh;
   }
+  .footer .contact-info ul li {
+    font-size: 18px;
+  }
+  .footer .contact-info ul li i {
+    font-size: 18px;
+  }
 }
 @media (min-width: 992px) {
   .footer h4 {
     display: block;
+    color: #eae5e2;
   }
   .footer .contact-info .space {
-    width: 60%;
+    width: 55%;
     height: 25vh;
   }
   .footer .social-info {
@@ -24078,6 +24085,11 @@ textarea.form-control-lg {
     height: 20px;
     width: 600px;
     background-color: #d4dee7;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .social-info ul li a i {
+    font-size: 50px;
   }
 }
 /*!
@@ -48436,9 +48448,14 @@ textarea.form-control-lg {
   }
   .navigator .navbar-collapse ul li {
     margin-left: 1.25rem;
-    width: 125px;
+    width: 100px;
     height: 20px;
     background-color: #d8e2ee;
+  }
+}
+@media (min-width: 1200px) {
+  .navigator .navbar-collapse ul li {
+    width: 125px;
   }
 }
 /*!
@@ -60591,23 +60608,23 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   h1 {
-    font-size: 64px !important;
+    font-size: 44px !important;
   }
   h2 {
-    font-size: 60px !important;
+    font-size: 40px !important;
   }
   h3 {
-    font-size: 38px !important;
+    font-size: 30px !important;
     color: #eae5e2;
   }
   h4 {
-    font-size: 32px !important;
+    font-size: 24px !important;
     font-weight: 600 !important;
   }
   p,
   a,
   li {
-    font-size: 22px !important;
+    font-size: 18px !important;
     line-height: 1.75;
     color: #636d79;
   }
@@ -72899,23 +72916,24 @@ textarea.form-control-lg {
     position: relative;
   }
   .hero .left .button .btnArrow i {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #cac2bf;
   }
   .hero .arrowDown {
     display: block;
     position: absolute;
-    bottom: -16px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
   }
   .hero--cross--up, .hero--cross--down {
     border-bottom: 24px solid #b8c8df;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .arrowDown {
+    font-size: 4rem;
   }
 }
 /*!
@@ -85086,7 +85104,7 @@ textarea.form-control-lg {
   color: #72645b;
   text-align: center;
   position: absolute;
-  bottom: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -85128,7 +85146,7 @@ textarea.form-control-lg {
   }
   .card-section .square--number {
     transform: translate(0%, 0%);
-    bottom: 5%;
+    top: 80%;
     left: 5%;
   }
   .card-section .square--arrow {
@@ -97415,10 +97433,6 @@ textarea.form-control-lg {
     position: relative;
   }
   .service .left .button .btnArrow i {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #cac2bf;
   }
   .service .right--envelope {

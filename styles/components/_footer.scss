@@ -38,7 +38,7 @@
 
                     i {
                         margin: 1.25rem;
-                        font-size: 50px;
+                        font-size: 40px;
                         color: $beige-b;
                     }
                 }
@@ -81,6 +81,17 @@
                 width: 60%;
                 height: 25vh;
             }
+
+            ul {
+
+                li {
+                    font-size: 18px;
+
+                    i {
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 }
@@ -91,12 +102,13 @@
 
         h4 {
             display: block;
+            color: $beige-c;
         }
 
         .contact-info {
 
             .space {
-                width: 60%;
+                width: 55%;
                 height: 25vh;
             }
         }
@@ -122,6 +134,28 @@
                 background-color: $white-footer;
             }
 
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+
+    .footer {
+
+        .social-info {
+
+            ul {
+
+                li {
+
+                    a {
+
+                        i {
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

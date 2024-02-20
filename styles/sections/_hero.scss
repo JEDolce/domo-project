@@ -127,7 +127,6 @@
                     position: relative;
 
                     i {
-                        @include absoluteCenter;
                         color: $beige-foot;
                     }
                 }
@@ -137,10 +136,10 @@
         .arrowDown {
             display: block;
             position: absolute;
-            bottom: -16px;
+            bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 4rem;
+            font-size: 3rem;
             color: white;
         }
 
@@ -150,6 +149,16 @@
             &--down {
                 border-bottom: 24px solid $blue-4;
             }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+
+    .hero {
+
+        .arrowDown {
+            font-size: 4rem;
         }
     }
 }
