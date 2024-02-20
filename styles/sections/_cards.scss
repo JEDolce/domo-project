@@ -63,7 +63,7 @@
         .square {
             min-height: 50vh;
             position: relative;
-            padding: 2rem 3rem 0rem 2rem;
+            padding: 1rem 3rem 2rem 1rem;
 
             &--content {
                 display: flex;
@@ -75,8 +75,8 @@
                 }
 
                 p {
-                    font-size: 16px;
-                    line-height: 1.5;
+                    font-size: 16px !important;
+                    line-height: 1.5 !important;
                 }
             }
 
@@ -132,4 +132,19 @@
             }
         }
     }
+}
+
+@include media-breakpoint-up(xxl) {
+
+    .card-section {
+
+        .square {
+            padding: 2rem 3rem 0rem 2rem;
+
+            p {
+                font-size: 22px !important;
+            }
+        }
+    }
+
 }

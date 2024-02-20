@@ -97656,7 +97656,7 @@ textarea.form-control-lg {
   .card-section .square {
     min-height: 50vh;
     position: relative;
-    padding: 2rem 3rem 0rem 2rem;
+    padding: 1rem 3rem 2rem 1rem;
   }
   .card-section .square--content {
     display: flex;
@@ -97667,8 +97667,8 @@ textarea.form-control-lg {
     color: #f8f9fa;
   }
   .card-section .square--content p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
   }
   .card-section .square--number {
     position: absolute;
@@ -97703,6 +97703,14 @@ textarea.form-control-lg {
   }
   .card-section .card-3 h4 {
     color: #636d79 !important;
+  }
+}
+@media (min-width: 1400px) {
+  .card-section .square {
+    padding: 2rem 3rem 0rem 2rem;
+  }
+  .card-section .square p {
+    font-size: 22px !important;
   }
 }
 /*!
