@@ -1,5 +1,6 @@
 @use '../customs' as *;
 @use '../components/mixins' as *;
+@use '../components/animations' as *;
 
 .navigator {
 
@@ -28,10 +29,28 @@
             display: flex;
             align-items: center;
 
+            img {
+                animation: roll-in 2000ms ease;
+            }
+
             .logo {
                 background-color: $brown;
                 height: 24px;
                 width: 100px;
+            }
+        }
+
+        &-collapse {
+
+            ul {
+
+                li {
+                    margin-top: 1rem;
+                    margin-left: 2.25rem;
+                    width: 200px;
+                    height: 20px;
+                    background-color: $blue-3;
+                }
             }
         }
     }
@@ -93,10 +112,15 @@
                 ul {
 
                     li {
+                        margin-top: 0;
                         margin-left: 1.25rem;
                         width: 100px;
-                        height: 20px;
-                        background-color: $blue-3;
+                        transition: all 250ms ease-in-out;
+
+                        &:hover {
+                            opacity: 0.45;
+                            transition: all 250ms ease-in-out;
+                        }
                     }
                 }
             }

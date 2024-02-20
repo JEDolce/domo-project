@@ -60,12 +60,6 @@ lgLineDown.forEach(l => {
     l.style.transform = `rotate(${envelopeAngleLg}deg)`;
 });
 
-// lgLineUp.style.width = `${envelopeDiagLg + 20}px`;
-// lgLineUp.style.transform = `rotate(-${envelopeAngleLg}deg)`;
-
-// lgLineDown.style.width = `${envelopeDiagLg + 20}px`;
-// lgLineDown.style.transform = `rotate(${envelopeAngleLg}deg)`;
-
 
 // MAIN SCREEN CROSS
 const mainSection = document.getElementById("hero");

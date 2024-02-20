@@ -1,5 +1,6 @@
 @use '../customs' as *;
 @use '../components/mixins' as *;
+@use '../components/animations' as *;
 
 .footer {
     background-color: $blue-foot;
@@ -65,6 +66,7 @@
                 i {
                     font-size: 40px;
                     color: $beige-b;
+                    animation: bounce 3000ms ease infinite;
                 }
             }
         }
@@ -123,6 +125,30 @@
 
             ul {
                 padding-left: 0;
+
+                li {
+                    transition: all 250ms ease-in-out;
+
+                    &:hover {
+                        transition: all 250ms ease-in-out;
+
+                        a {
+
+                            i {
+                                transition: all 250ms ease-in-out;
+                                color: $beige-foot;
+                                transform: translateY(-5px);
+                            }
+                        }
+                    }
+
+                    a {
+
+                        i {
+                            transition: all 250ms ease-in-out;
+                        }
+                    }
+                }
             }
         }
 
@@ -133,7 +159,6 @@
                 width: 600px;
                 background-color: $white-footer;
             }
-
         }
     }
 }

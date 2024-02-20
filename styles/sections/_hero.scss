@@ -1,5 +1,6 @@
 @use '../customs' as *;
 @use '../components/mixins' as *;
+@use '../components/animations' as *;
 
 
 .hero {
@@ -9,6 +10,7 @@
 
     .left {
         z-index: 100;
+        animation: fade-in 2200ms linear;
 
         .separator {
             display: none
@@ -112,6 +114,17 @@
                 height: 30px;
                 display: flex;
                 cursor: pointer;
+                transition: all 250ms ease-in-out;
+
+                &:hover {
+                    width: 160px;
+                    transition: all 250ms ease-in-out;
+
+                    .btnArrow {
+                        width: 40px;
+                        transition: all 250ms ease-in-out;
+                    }
+                }
 
                 .largeBtn {
                     width: 115px;
@@ -125,6 +138,7 @@
                     background-color: $brown;
                     margin-left: 5px;
                     position: relative;
+                    transition: all 250ms ease-in-out;
 
                     i {
                         color: $beige-foot;
@@ -141,6 +155,7 @@
             transform: translateX(-50%);
             font-size: 3rem;
             color: white;
+            animation: pulseArrow 1300ms linear infinite;
         }
 
         &--cross {
