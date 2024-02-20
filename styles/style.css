@@ -109882,8 +109882,13 @@ textarea.form-control-lg {
     width: 30%;
     background-color: #7b9bc2;
     position: absolute;
-    right: 0;
+    right: 0%;
+    transform: translateX(20vw);
     overflow: hidden;
+  }
+  .service .right--envelope.showEnvelope {
+    transform: translateX(0);
+    transition: ease-in 0.75s;
   }
   .service .right--envelope--line-up {
     border-bottom: 12px solid #a4b9d4;

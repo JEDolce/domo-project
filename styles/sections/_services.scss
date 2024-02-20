@@ -161,8 +161,14 @@
                 width: 30%;
                 background-color: $blue-1;
                 position: absolute;
-                right: 0;
+                right: 0%;
+                transform: translateX(20vw);
                 overflow: hidden;
+
+                &.showEnvelope {
+                    transform: translateX(0);
+                    transition: ease-in 0.75s;
+                }
 
                 &--line-up {
                     @include diagonal;
