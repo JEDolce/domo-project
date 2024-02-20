@@ -8,20 +8,24 @@
         height: 50vh;
         position: relative;
 
-        .content {
+        &--content {
             display: none;
         }
 
-        .number {
+        &--number {
             @include circle;
             @include absoluteCenter;
+        }
+
+        &--arrow {
+            display: none;
         }
     }
 
     .card-1 {
         background-color: $blue-1;
 
-        .number {
+        .square--number {
             border: 3px solid $beige-c;
             color: $beige-c;
         }
@@ -42,10 +46,68 @@
 
 @include media-breakpoint-up(lg) {
 
-    .square {
+    .card-section {
 
-        .content {
-            display: block;
+        .square {
+            position: relative;
+
+            &--content {
+                display: flex;
+                flex-direction: column;
+                padding: 2rem 1rem;
+
+                h4 {
+                    color: $gray-100;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+            }
+
+            &--number {
+                transform: translate(0%, 0%);
+                bottom: 5%;
+                left: 5%;
+            }
+
+            &--arrow {
+                display: block;
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                border: 3px solid #677280;
+                padding: 0.5rem 0.75rem;
+                cursor: pointer;
+
+                i {
+                    color: #677280;
+                    font-size: 30px;
+                }
+            }
+
+            .light {
+                border: 3px solid #828fa0;
+
+                i {
+                    color: #828fa0;
+                }
+            }
+        }
+
+        .card-1 {
+
+            p {
+                color: $beige-b;
+            }
+        }
+
+        .card-3 {
+
+            h4 {
+                color: #636d79 !important;
+            }
         }
     }
 }

@@ -2,8 +2,38 @@
 @use '../components/mixins' as *;
 
 
-// DESKTOP
+// DESKTOP SMALL
 @include media-breakpoint-up(lg) {
+
+    h1 {
+        font-size: 64px !important;
+    }
+
+    h2 {
+        font-size: 60px !important;
+    }
+
+    h3 {
+        font-size: 38px !important;
+        color: $beige-c;
+    }
+
+    h4 {
+        font-size: 32px !important;
+        font-weight: 600 !important;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 22px !important;
+        line-height: 1.75;
+        color: #636d79;
+    }
+}
+
+// DESKTOP LARGE
+@include media-breakpoint-up(xl) {
 
     h1 {
         font-size: 64px !important;
@@ -20,7 +50,6 @@
     h4 {
         font-size: 32px !important;
         font-weight: 600 !important;
-        color: $beige-c !important;
     }
 
     p,

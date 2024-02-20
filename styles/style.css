@@ -60597,12 +60597,34 @@ textarea.form-control-lg {
     font-size: 60px !important;
   }
   h3 {
+    font-size: 38px !important;
+    color: #eae5e2;
+  }
+  h4 {
+    font-size: 32px !important;
+    font-weight: 600 !important;
+  }
+  p,
+  a,
+  li {
+    font-size: 22px !important;
+    line-height: 1.75;
+    color: #636d79;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 64px !important;
+  }
+  h2 {
+    font-size: 60px !important;
+  }
+  h3 {
     font-size: 52px !important;
   }
   h4 {
     font-size: 32px !important;
     font-weight: 600 !important;
-    color: #eae5e2 !important;
   }
   p,
   a,
@@ -72878,7 +72900,7 @@ textarea.form-control-lg {
   }
   .hero .left .button .btnArrow i {
     position: absolute;
-    top: 50%;
+    bottom: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #cac2bf;
@@ -85051,10 +85073,10 @@ textarea.form-control-lg {
   height: 50vh;
   position: relative;
 }
-.card-section .square .content {
+.card-section .square--content {
   display: none;
 }
-.card-section .square .number {
+.card-section .square--number {
   width: 60px;
   height: 60px;
   line-height: 50px;
@@ -85064,14 +85086,17 @@ textarea.form-control-lg {
   color: #72645b;
   text-align: center;
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.card-section .square--arrow {
+  display: none;
 }
 .card-section .card-1 {
   background-color: #7b9bc2;
 }
-.card-section .card-1 .number {
+.card-section .card-1 .square--number {
   border: 3px solid #eae5e2;
   color: #eae5e2;
 }
@@ -85086,8 +85111,50 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 992px) {
-  .square .content {
+  .card-section .square {
+    position: relative;
+  }
+  .card-section .square--content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .card-section .square--content h4 {
+    color: #f8f9fa;
+  }
+  .card-section .square--content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .card-section .square--number {
+    transform: translate(0%, 0%);
+    bottom: 5%;
+    left: 5%;
+  }
+  .card-section .square--arrow {
     display: block;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border: 3px solid #677280;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+  }
+  .card-section .square--arrow i {
+    color: #677280;
+    font-size: 30px;
+  }
+  .card-section .square .light {
+    border: 3px solid #828fa0;
+  }
+  .card-section .square .light i {
+    color: #828fa0;
+  }
+  .card-section .card-1 p {
+    color: #efeeec;
+  }
+  .card-section .card-3 h4 {
+    color: #636d79 !important;
   }
 }
 /*!
@@ -97349,7 +97416,7 @@ textarea.form-control-lg {
   }
   .service .left .button .btnArrow i {
     position: absolute;
-    top: 50%;
+    bottom: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #cac2bf;
