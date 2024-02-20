@@ -1,5 +1,7 @@
 @use '../customs' as *;
 @use '../components/mixins' as *;
+@use '../components/animations' as *;
+
 
 .card-section {
     overflow-x: hidden;
@@ -92,6 +94,13 @@
                 border: 3px solid #677280;
                 padding: 0.5rem 0.75rem;
                 cursor: pointer;
+
+                &:hover {
+
+                    i {
+                        animation: shake 3000ms ease infinite;
+                    }
+                }
 
                 i {
                     color: #677280;

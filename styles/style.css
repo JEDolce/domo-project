@@ -24059,6 +24059,17 @@ textarea.form-control-lg {
     transform: translateY(0);
   }
 }
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -36260,6 +36271,17 @@ textarea.form-control-lg {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
   }
 }
 .footer {
@@ -60714,6 +60736,17 @@ textarea.form-control-lg {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
   }
 }
 .navigator .topbar {
@@ -85195,6 +85228,17 @@ textarea.form-control-lg {
     transform: translateY(0);
   }
 }
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
 .hero {
   min-height: 100vh;
   background-color: #dee8f1;
@@ -97493,6 +97537,72 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes roll-in {
+  0% {
+    transform: translateX(-300%) rotate(-120deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulseArrow {
+  0% {
+    bottom: 30px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-10%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
 .card-section {
   overflow-x: hidden;
 }
@@ -97573,6 +97683,9 @@ textarea.form-control-lg {
     border: 3px solid #677280;
     padding: 0.5rem 0.75rem;
     cursor: pointer;
+  }
+  .card-section .square--arrow:hover i {
+    animation: shake 3000ms ease infinite;
   }
   .card-section .square--arrow i {
     color: #677280;
